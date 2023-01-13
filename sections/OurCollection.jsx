@@ -13,20 +13,22 @@ export default function OurCollection() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="py-12 max-w-[830px] self-center"
+      className="flex flex-col items-center py-12 w-full self-center"
     >
-      <h2 className="text-center sm:text-6xl text-4xl gradient-gray">our collection</h2>
+      <h2 className="text-center sm:text-6xl text-4xl gradient-gray">
+        our collection
+      </h2>
 
       {collection.map((coffee) => {
         return (
           <motion.div
-          key={coffee.id}
-          variants={textVariant2}         
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
-          className='grid grid-cols-1 sm:grid-cols-3 justify-items-center text-center sm:text-left items-center pb-8 pt-4'
-        >
+            key={coffee.id}
+            variants={textVariant2}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className="grid grid-cols-1 sm:grid-cols-3 justify-items-center text-center sm:text-left items-center pb-8 pt-4"
+          >
             <img
               src={require(`../public/image-${coffee.image}.png`).default.src}
               alt={coffee.name}
@@ -34,7 +36,7 @@ export default function OurCollection() {
             />
             <div className="sm:col-span-2 text-darkBlue">
               <p className="font-extrabold">{coffee.name}</p>
-              <p>{coffee.description}</p>
+              <p className="max-w-[460px]">{coffee.description}</p>
             </div>
           </motion.div>
         );

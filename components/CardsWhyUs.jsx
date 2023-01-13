@@ -9,7 +9,7 @@ export default function CardsWhyUs() {
   return (
     <motion.div
       variants={textContainer}
-      className="lg:flex lg:self-center -translate-y-24"
+      className="justify-center lg:flex lg:self-center -translate-y-24"
     >
       {whyUs.map((card) => {
         return (

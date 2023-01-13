@@ -1,3 +1,5 @@
+import { Navbar } from "../components";
+import { Footer } from "../sections";
 import "../styles/globals.scss";
 
 const RootLayout = ({ children }) => (
@@ -10,7 +12,11 @@ const RootLayout = ({ children }) => (
         rel="stylesheet"
       />
     </head>
-    <body>{children}</body>
+    <body className="flex flex-col px-10">
+      <Navbar />
+      <div>{children}</div>
+      <Footer />
+    </body>
   </html>
 );
 
