@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./variables";
+@import './variables';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fraunces", sans-serif;
+  font-family: 'Fraunces', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -27,7 +27,7 @@ button {
 }
 
 .hero {
-  background-image: url("/image-hero-coffeepress.jpg");
+  background-image: url('/image-hero-coffeepress.jpg');
 }
 
 .gradient-gray {
@@ -157,12 +157,7 @@ svg:hover path {
   */
 #menu {
   position: absolute;
-  right: 30px;
-  width: 400px;
-  margin: -150px -90px 0 -50px;
-  padding-top: 125px;
-  padding-right: 100px;
-  padding: 155px 100px 300px 100px;
+  right: 0px;
 
   background: #fff;
   list-style-type: none;
