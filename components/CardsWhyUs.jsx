@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { textContainer, textVariant2 } from "../utils/motion";
-import { whyUs } from "../data/whyUs";
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { textContainer, textVariant2 } from '../utils/motion';
+import { whyUs } from '../data/whyUs';
 
 export default function CardsWhyUs() {
   return (
