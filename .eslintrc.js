@@ -1,4 +1,8 @@
 module.exports = {
+  rules: {
+    quotes: [2, "double"],
+  },
+
   env: {
     browser: true,
     es2021: true,
@@ -12,6 +16,7 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react"],
+
   rules: {
     "react/no-unescaped-entities": 0,
     "eslintreact/no-danger": 0,
@@ -60,6 +65,16 @@ module.exports = {
     "jsx-a11y/no-autofocus": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "react/no-array-index-key": 0,
+    "prettier/prettier": [
+      "warn",
+      {
+        singleQuote: true,
+        semi: true,
+      },
+    ],
+
+    "jsx-quotes": [2, "prefer-single"],
+
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
@@ -68,6 +83,5 @@ module.exports = {
         aspects: ["noHref", "invalidHref", "preferButton"],
       },
     ],
-    quotes: [2, "single", { avoidEscape: true }],
   },
 };
