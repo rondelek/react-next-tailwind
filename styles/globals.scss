@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: $teal;
+  color: $white;
+  font-size: $textLgFont;
+  line-height: $textLgHeight;
+  font-weight: bold;
+  transition: 0.2s;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: $tealHover;
+  }
+}
+
+.hero {
+  background-image: url("/image-hero-coffeepress.jpg");
+}
+
+.gradient-gray {
+  background: -webkit-linear-gradient(#333, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+svg path {
+  fill: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+svg:hover path {
+  fill: #fdd5ba;
+}
