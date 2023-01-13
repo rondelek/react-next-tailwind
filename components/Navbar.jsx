@@ -1,8 +1,5 @@
 "use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
+
 import Link from "next/link";
 
 export default function Navbar() {
@@ -43,7 +40,6 @@ export default function Navbar() {
         </div>
       </nav>
       {/* <Link href="/about">About</Link> */}
-      {/* <Image src="/menu.png" alt="menu" width={25} height={25} /> */}
     </div>
   );
 }

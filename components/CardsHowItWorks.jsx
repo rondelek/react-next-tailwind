@@ -2,13 +2,13 @@
 
 import { howItWorks } from "../data/howItWorks";
 import { motion } from "framer-motion";
-import { staggerContainer, textContainer, textVariant2 } from "../utils/motion";
+import { textContainer, textVariant2 } from "../utils/motion";
 
 export default function CardsHowItWorks() {
   return (
     <motion.div
       variants={textContainer}
-      className="lg:flex  lg:justify-around w-full"
+      className="lg:flex lg:justify-around w-full"
     >
       {howItWorks.map((card) => {
         return (
