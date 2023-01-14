@@ -3,8 +3,6 @@
 import { motion } from 'framer-motion';
 import { textContainer, textVariant2 } from '../utils/motion';
 
-import React from 'react';
-
 export function TypingText({ title, textStyle }) {
   return (
     <motion.div variants={textContainer} className={textStyle}>

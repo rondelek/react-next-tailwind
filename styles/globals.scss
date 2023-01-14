@@ -44,16 +44,13 @@ svg:hover path {
 
 // menu
 
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
+nav p {
+  font-weight: bolder;
+  transition: 0.2s;
+  &:hover {
+    color: $darkBlue;
+  }
+}
 
 #menuToggle {
   display: block;
@@ -75,7 +72,7 @@ svg:hover path {
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  color: $darkBlue;
 }
 
 #menuToggle input {

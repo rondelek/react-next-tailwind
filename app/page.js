@@ -1,5 +1,5 @@
-import CardsWhyUs from "../components/CardsWhyUs";
-import { OurCollection, WhyUs, Hero, HowItWorks } from "../sections";
+import { OurCollection, WhyUs, Hero, HowItWorks } from '../sections';
+import { CardsWhyUs } from '../components';
 
 const Page = () => (
   <div>

@@ -17,16 +17,13 @@ export default function Navbar() {
       </Link>
 
       <nav className="hidden sm:flex items-end uppercase text-xs text-darkGray gap-8">
+        <Link href="/">
+          <p>Home</p>
+        </Link>
         <Link href="/about">
           <p>About us</p>
         </Link>
-        <Link href="/about">
-          <p>Shop</p>
-        </Link>
-        <Link href="/about">
-          <p>Blog</p>
-        </Link>
-        <Link href="#">
+        <Link href="/plan">
           <p>Create your plan</p>
         </Link>
       </nav>
@@ -35,24 +32,18 @@ export default function Navbar() {
         <div id="menuToggle">
           <input type="checkbox" />
 
-          <span></span>
-          <span></span>
-          <span></span>
+          <span />
+          <span />
+          <span />
 
           <ul id="menu" className={burger}>
-            <a href="#">
+            <a href="/">
               <li>Home</li>
             </a>
             <a href="/about">
               <li>About us</li>
             </a>
-            <a href="/about">
-              <li>Shop</li>
-            </a>
-            <a href="/about">
-              <li>Blog</li>
-            </a>
-            <a href="#">
+            <a href="/plan">
               <button className="py-2 px-4 mt-8">Create your plan</button>
             </a>
           </ul>

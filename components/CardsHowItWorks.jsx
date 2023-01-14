@@ -1,7 +1,7 @@
 'use client';
 
-import { howItWorks } from '../data/howItWorks';
 import { motion } from 'framer-motion';
+import { howItWorks } from '../data/howItWorks';
 import { textContainer, textVariant2 } from '../utils/motion';
 
 export default function CardsHowItWorks() {

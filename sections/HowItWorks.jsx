@@ -1,4 +1,4 @@
-import CardsHowItWorks from "../components/CardsHowItWorks";
+import { CardsHowItWorks } from '../components';
 
 export default function HowItWorks() {
   return (
